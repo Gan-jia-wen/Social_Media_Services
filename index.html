@@ -523,7 +523,7 @@
                 
 
                 <!-- bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb -->
-                 <form id="form" class="space-y-4 text-lg field" onsubmit="event.preventDefault(); alert('In a real website, this would send an email or open a booking calendar!');">
+                 <form id="form" class="space-y-4 text-lg field" onsubmit="return handleFormSubmit(event);">
   <div class="field">
     <label for="name">Name*<span class="italic text-brand-600">(Required)</span></label>
     <input type="text" required name="name" id="name" placeholder="What is your name?" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-brand-500">
@@ -769,6 +769,45 @@
                 }
             });
         });
+        // 表单提交处理函数
+function handleFormSubmit(event) {
+    // 阻止表单默认提交行为
+    event.preventDefault();
+    
+    // 使用 EmailJS 发送表单
+    emailjs.sendForm('service_ux64w2q', 'template_iaypgzp', event.target)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            // 发送成功后的提示
+            alert('Thank you! Your consultation has been booked. We will contact you soon.');
+            // 调用函数清空表单
+            clearForm();
+        }, function(error) {
+            console.log('FAILED...', error);
+            alert('Oops! Something went wrong. Please try again later.');
+        });
+    
+    // 阻止表单的默认提交（已由EmailJS处理）
+    return false;
+}
+
+// 清空表单的函数
+function clearForm() {
+    // 获取表单元素
+    const form = document.getElementById('form');
+    
+    // 1. 重置所有输入框、文本域、下拉菜单的值
+    form.reset();
+    
+    // 2. 特别处理单选按钮组：取消所有选中状态
+    const radioGroups = document.querySelectorAll('input[type="radio"]');
+    radioGroups.forEach(radio => {
+        radio.checked = false;
+    });
+    
+    // 注意：如果你的单选按钮有默认选中的项（HTML中添加了checked属性），
+    // 上面的重置会清除它。如果需要有默认项，则不需要第2步，只用 form.reset() 即可。
+}
     </script>
 </body>
 </html>
