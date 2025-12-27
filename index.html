@@ -40,6 +40,18 @@
         .carousel-track { transition: transform 0.5s ease-in-out; }
         .testimonial-card { transition: all 0.3s ease; }
         .testimonial-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1); }
+        /* 为移动菜单添加过渡效果 */
+#mobileMenu {
+    transition: all 0.3s ease-in-out;
+    transform-origin: top;
+    opacity: 0;
+    transform: scaleY(0);
+    display: flex !important; /* 覆盖 hidden 类，但通过 scaleY(0) 隐藏 */
+}
+#mobileMenu.menu-open {
+    opacity: 1;
+    transform: scaleY(1);
+}
     </style>
 </head>
 <body class="font-sans text-gray-800 antialiased bg-gray-50">
@@ -62,12 +74,24 @@
                     <a href="#clients" class="text-gray-600 hover:text-brand-600 px-3 py-2 rounded-md text-sm font-medium">Clients</a>
                     <a href="#pricing" class="text-gray-600 hover:text-brand-600 px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
                 </div>
-                <div class="md:hidden">
-                    <!-- Mobile menu button placeholder -->
-                    <button class="text-gray-600 hover:text-brand-600 focus:outline-none">
-                        <i class="fas fa-bars text-2xl"></i>
-                    </button>
-                </div>
+                <!-- 修改后的 Mobile menu button 部分 -->
+<div class="md:hidden flex items-center">
+    <!-- 菜单切换按钮 -->
+    <button id="mobileMenuButton" class="text-gray-600 hover:text-brand-600 focus:outline-none">
+        <i class="fas fa-bars text-2xl"></i>
+    </button>
+    <!-- 下拉菜单容器 -->
+    <div id="mobileMenu" class="absolute top-20 left-0 w-full bg-white shadow-lg z-40 hidden flex-col px-6 py-4 space-y-4">
+        <a href="#about" class="mobile-nav-link text-gray-600 hover:text-brand-600 py-2 border-b border-gray-100">About</a>
+        <a href="#founder" class="mobile-nav-link text-gray-600 hover:text-brand-600 py-2 border-b border-gray-100">Founder</a>
+        <a href="#platforms" class="mobile-nav-link text-gray-600 hover:text-brand-600 py-2 border-b border-gray-100">Platforms</a>
+        <a href="#services" class="mobile-nav-link text-gray-600 hover:text-brand-600 py-2 border-b border-gray-100">Services</a>
+        <a href="#clients" class="mobile-nav-link text-gray-600 hover:text-brand-600 py-2 border-b border-gray-100">Clients</a>
+        <a href="#pricing" class="mobile-nav-link text-gray-600 hover:text-brand-600 py-2 border-b border-gray-100">Pricing</a>
+        <!-- 移动端的预约按钮 -->
+        <a href="#contact" class="mobile-nav-link bg-brand-600 text-white text-center px-5 py-3 rounded-full hover:bg-brand-700 transition mt-2">Book Consultation</a>
+    </div>
+</div>
                 <div class="hidden md:block">
                      <a href="#contact" class="bg-brand-600 text-white px-5 py-2 rounded-full hover:bg-brand-700 transition">Book Consultation</a>
                 </div>
@@ -808,6 +832,52 @@ function clearForm() {
     // 注意：如果你的单选按钮有默认选中的项（HTML中添加了checked属性），
     // 上面的重置会清除它。如果需要有默认项，则不需要第2步，只用 form.reset() 即可。
 }
+
+// 移动端菜单逻辑
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+    
+    if (mobileMenuButton && mobileMenu) {
+        // 点击菜单按钮切换菜单显示/隐藏
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('menu-open');
+            // 切换汉堡菜单图标（三条杠 ↔ 叉号）
+            const icon = mobileMenuButton.querySelector('i');
+            if (mobileMenu.classList.contains('menu-open')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // 点击菜单链接后关闭菜单
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.remove('menu-open');
+                const icon = mobileMenuButton.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+        
+        // 点击菜单外部区域关闭菜单
+        document.addEventListener('click', function(event) {
+            const isClickInsideMenu = mobileMenu.contains(event.target);
+            const isClickOnButton = mobileMenuButton.contains(event.target);
+            
+            if (!isClickInsideMenu && !isClickOnButton && mobileMenu.classList.contains('menu-open')) {
+                mobileMenu.classList.remove('menu-open');
+                const icon = mobileMenuButton.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    }
+});
     </script>
 </body>
 </html>
