@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kan Social Media Services - China Marketing Experts</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fef2f2',
+                            100: '#fee2e2',
+                            500: '#ef4444', // Red 500
+                            600: '#dc2626', // Red 600 (Primary)
+                            800: '#991b1b', // Red 800
+                            900: '#7f1d1d', // Red 900
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .service-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); }
+        .carousel-track { transition: transform 0.5s ease-in-out; }
+        .testimonial-card { transition: all 0.3s ease; }
+        .testimonial-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <!-- Logo Placeholder -->
+                    <div class="h-10 w-auto text-1xl font-bold text-brand-800 flex items-center gap-2" >
+                        <img src="./网站图片/网站图片/企业Logo1.jpg" alt="" style="width: 80px">SOCIAL MEDIA SERVICES
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-brand-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="#founder" class="text-gray-600 hover:text-brand-600 px-3 py-2 rounded-md text-sm font-medium">Founder</a>
+                    <a href="#platforms" class="text-gray-600 hover:text-brand-600 px-3 py-2 rounded-md text-sm font-medium">Platforms</a>
+                    <a href="#services" class="text-gray-600 hover:text-brand-600 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                    <a href="#clients" class="text-gray-600 hover:text-brand-600 px-3 py-2 rounded-md text-sm font-medium">Clients</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-brand-600 px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
+                </div>
+                <div class="md:hidden">
+                    <!-- Mobile menu button placeholder -->
+                    <button class="text-gray-600 hover:text-brand-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                <div class="hidden md:block">
+                     <a href="#contact" class="bg-brand-600 text-white px-5 py-2 rounded-full hover:bg-brand-700 transition">Book Consultation</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section (Image Only) -->
+    <div class="pt-20 w-full bg-gray-900">
+        <!-- Banner Image Placeholder: Replace src with 'Banner.jpg' -->
+        <img src="./网站图片/网站图片/Banner.jpg" 
+             alt="Kan Social Media Services Banner" >
+    </div>
+
+    <!-- About Text Section (Re-layout) -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4  ">
+            <span class="text-brand-600 font-semibold text-center tracking-wider uppercase text-sm mb-2 block">Who We Are</span>
+            <h1 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-8 tracking-tight">
+                Bridging Brands to China
+            </h1>
+            <div class="w-24 h-1.5 bg-brand-500 text-center mx-auto mb-10 rounded-full"></div>
+            
+            <p class="text-lg md:text-xl text-gray-600 mb-10 leading-relaxed max-w-3xl mx-auto">
+                We are a specialized social media marketing agency focused on China’s top digital platforms. We help international brands successfully establish and grow their presence in China through expert content creation, market analysis, and strategic operations.
+            </p>
+            
+            <div class="text-center journey-btn" >
+                <a href="#contact" class="text-lg  bg-brand-600 text-white font-bold py-4 px-10 rounded-full hover:bg-brand-700 hover:scale-105 transition duration-300 shadow-lg shadow-brand-200 inline-flex items-center gap-2">
+                Start Your Journey <i class="fas fa-arrow-right"></i>
+            </a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Founder Section (Why Katherine?) -->
+    <section id="founder" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2 relative">
+                    <!-- Founder Image Placeholder -->
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="./网站图片/网站图片/41eabf10-4923-481a-aeba-6b57152b06b9_xia_zai.jpg" 
+                             alt="Katherine - Founder" 
+                             class="w-full h-auto object-cover transform hover:scale-105 transition duration-500">
+                    </div>
+                    <!-- Decorative element -->
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-brand-100 rounded-full -z-10"></div>
+                    <div class="absolute -top-6 -left-6 w-24 h-24 bg-brand-100 rounded-full -z-10"></div>
+                </div>
+                
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-2">Why Katherine?</h2>
+                    <div class="h-1 w-20 bg-brand-500 mb-6"></div>
+                    
+                    <div class="space-y-6 text-gray-600 leading-relaxed">
+                        <p>
+                            Starting her career as a social media editor at the world-renowned <strong>Hearst Media Group</strong>, Katherine later advanced to become the New Media Editor-in-Chief at <strong>CBS Beijing, China</strong>.
+                        </p>
+                        <p>
+                            After relocating to Australia, she built her own social media presence from the ground up, rapidly and purely organically growing an audience of over <strong>100,000 followers</strong> across WeChat and Xiaohongshu.
+                        </p>
+                        <p>
+                            Today, she leads her design, operations, and traffic acquisition team to provide comprehensive support, helping her clients achieve greater visibility and success in both the Chinese market and overseas Chinese communities.
+                        </p>
+                    </div>
+
+                    <!-- Email Address Added Here -->
+                    <div class="mt-6 flex items-center gap-3 text-gray-700">
+                        <div class="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <span style="cursor: pointer;" class="text-lg font-medium hover:text-brand-600 transition  underline-offset-4 decoration-brand-200">katherine.z@kansocialmedia.com</span>
+                    </div>
+
+                    <div class="mt-8 flex items-center gap-4">
+                        <div class="bg-brand-50 p-4 rounded-lg text-center min-w-[120px]">
+                            <span class="block text-2xl font-bold text-brand-600">8+</span>
+                            <span class="text-xs text-gray-500 uppercase">Years Exp</span>
+                        </div>
+                        <div class="bg-brand-50 p-4 rounded-lg text-center min-w-[120px]">
+                            <span class="block text-2xl font-bold text-brand-600">100k+</span>
+                            <span class="text-xs text-gray-500 uppercase">Followers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platforms Section -->
+    <section id="platforms" class="py-16 bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-10">Platforms We Master</h2>
+            
+            <div class="flex flex-wrap justify-center gap-8 md:gap-12">
+                <!-- Platform Item -->
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 bg-gray-50 rounded-2xl shadow-md flex items-center justify-center mb-3 group-hover:scale-110 transition text-green-500 text-3xl">
+                        <img src="./网站图片/网站图片/wechat business account.png" alt="" style="border-radius: 15px;">
+                    </div>
+                    <span class="font-medium text-gray-700">WeChat Business</span>
+                </div>
+                <!-- Platform Item -->
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 bg-gray-50 rounded-2xl shadow-md flex items-center justify-center mb-3 group-hover:scale-110 transition text-orange-500 text-3xl">
+                        <img src="./网站图片/网站图片/wechat video chanel.png" alt="" style="border-radius: 15px;">
+                    </div>
+                    <span class="font-medium text-gray-700">Channels</span>
+                </div>
+                <!-- Platform Item -->
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 bg-gray-50 rounded-2xl shadow-md flex items-center justify-center mb-3 group-hover:scale-110 transition text-red-500 text-3xl">
+                        <img src="./网站图片/网站图片/redbook.png" alt="" style="border-radius: 15px;">
+                    </div>
+                    <span class="font-medium text-gray-700">Xiaohongshu</span>
+                </div>
+                <!-- Platform Item -->
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 bg-gray-50 rounded-2xl shadow-md flex items-center justify-center mb-3 group-hover:scale-110 transition text-yellow-500 text-3xl">
+                        <img src="./网站图片/网站图片/unnamed.png" alt="" style="border-radius: 15px;">
+                    </div>
+                    <span class="font-medium text-gray-700">Weibo</span>
+                </div>
+                <!-- Platform Item -->
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 bg-gray-50 rounded-2xl shadow-md flex items-center justify-center mb-3 group-hover:scale-110 transition text-gray-900 text-3xl">
+                        <img src="./网站图片/网站图片/douyin.png" alt="" style="border-radius: 15px;">
+                    </div>
+                    <span class="font-medium text-gray-700">Douyin</span>
+                </div>
+                <!-- Platform Item -->
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 bg-gray-50 rounded-2xl shadow-md flex items-center justify-center mb-3 group-hover:scale-110 transition text-blue-400 text-3xl">
+                        <img src="./网站图片/网站图片/bilibili.jpeg" alt="" style="border-radius: 15px;">
+                    </div>
+                    <span class="font-medium text-gray-700">Bilibili</span>
+                </div>
+                 <!-- Platform Item -->
+                 <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 bg-gray-50 rounded-2xl shadow-md flex items-center justify-center mb-3 group-hover:scale-110 transition text-orange-600 text-3xl">
+                        <img src="./网站图片/网站图片/taobao.jpeg" alt="" style="border-radius: 15px;">
+                    </div>
+                    <span class="font-medium text-gray-700">Taobao</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (Emphasized) -->
+    <section id="services" class="py-20 bg-gray-900 text-white relative overflow-hidden">
+        <!-- Background decorative blobs -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96  rounded-full  opacity-20 core-right-bg bg"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80  opacity-20 core-right-bg2 bg"></div>
+
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <span class="text-brand-400 font-semibold tracking-wider uppercase text-sm">What We Do</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2">Core Services</h2>
+                <div class="w-24 h-1 bg-brand-500 mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-gray-800 p-8 rounded-xl border border-gray-700 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition ">
+                        <i class="fas fa-chess-knight text-8xl text-brand-500"></i>
+
+                    </div>
+                    <div class="w-20 h-20 bg-brand-600 rounded-lg flex items-center justify-center mb-6 text-white text-2xl shadow-lg shadow-brand-900/50 bg bg1">
+                        <!--  -->
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Strategy Development</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Craft customized content operation strategies based on the client's industry and brand strengths.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card bg-gray-800 p-8 rounded-xl border border-gray-700 relative overflow-hidden group">
+                     <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition ">
+                        <i class="fas fa-pen-nib text-8xl text-brand-500"></i>
+                    </div>
+                    <div class="w-20 h-20 bg-brand-600 rounded-lg flex items-center justify-center mb-6 text-white text-2xl shadow-lg shadow-brand-900/50 bg bg2">
+                        <!--  -->
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Content Production</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        A professional design and editing team with experience at top Chinese MCN agencies delivering high-quality visuals.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card bg-gray-800 p-8 rounded-xl border border-gray-700 relative overflow-hidden group">
+                     <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition ">
+                        <i class="fas fa-chart-line text-8xl text-brand-500"></i>
+                    </div>
+                    <div class="w-20 h-20 bg-brand-600 rounded-lg flex items-center justify-center mb-6 text-white text-2xl shadow-lg shadow-brand-900/50 bg bg3">
+                        
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">ROI Measurement</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Help clients achieve a content-driven sales cycle through social media with precise monitoring.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card bg-gray-800 p-8 rounded-xl border border-gray-700 relative overflow-hidden group">
+                     <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition ">
+                        <i class="fas fa-bullhorn text-8xl text-brand-500"></i>
+                    </div>
+                    <div class="w-20 h-20 bg-brand-600 rounded-lg flex items-center justify-center mb-6 text-white text-2xl shadow-lg shadow-brand-900/50 bg bg4">
+                        
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">KOL Campaigns</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Leverage a precise KOL resource database, helping clients save significantly on promotion budgets.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card bg-gray-800 p-8 rounded-xl border border-gray-700 relative overflow-hidden group">
+                     <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition ">
+                        <i class="fas fa-bullseye text-8xl text-brand-500"></i>
+                    </div>
+                    <div class="w-20 h-20 bg-brand-600 rounded-lg flex items-center justify-center mb-6 text-white text-2xl shadow-lg shadow-brand-900/50 bg bg5">
+                        
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Leads & Ad Promotion</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Trained in Xiaohongshu-specific traffic promotion and well-versed in its algorithm, maximizing profits with minimal costs.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card bg-gray-800 p-8 rounded-xl border border-gray-700 relative overflow-hidden group">
+                     <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition ">
+                        <i class="fas fa-star text-8xl text-brand-500"></i>
+                    </div>
+                    <div class="w-20 h-20 bg-brand-600 rounded-lg flex items-center justify-center mb-6 text-white text-2xl shadow-lg shadow-brand-900/50 bg bg6">
+                        
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Add on Services:</h3>
+
+                    <div style="overflow: auto; height: 100px;scrollbar-width: none;-ms-overflow-style: none; ">
+                        <h5>Community Management & Sales Consultant</h5>
+                    <p class="text-gray-400 leading-relaxed">
+                        Help brands build their own WeChat communities and operate within the private domain to further drive sales.
+                    </p>
+                    <h5>Additional Services</h5>
+                    <p class="text-gray-400 leading-relaxed">
+                        Live-stream planning, H5 development, WeChat mini-programs, Customer Services and more.
+                    </p>
+                    </div>
+                    
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By / Clients Carousel -->
+    <section id="clients" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-4">Trusted by World Brands</h2>
+            <p class="text-lg text-gray-500 mb-12 max-w-2xl mx-auto">
+                Industries: Food & Beverage | Fashion | Education | Logistics | International Chambers of Commerce | Consulting Firms
+            </p>
+
+            <div class="relative max-w-5xl mx-auto px-12"> <!-- Added px-12 wrapper to make room for arrows -->
+                <!-- Carousel Container -->
+                <div class="overflow-hidden relative" id="clientCarousel">
+                    <div class="carousel-track flex transition-transform duration-500" id="carouselTrack" style="width: 200%;">
+                        <!-- Slide 1 (4 logos) -->
+                        <div class="w-1/2 flex justify-around items-center px-4 gap-4 md:gap-8">
+                             <!-- Replace src with actual logos -->
+                            <img src="./客户logo/客户logo/1.jpg" alt="Client 1" class="h-20 w-20 opacity-70 hover:opacity-100 transition object-contain">
+                            <img src="./客户logo/客户logo/2.png" alt="Client 2" class="h-20 w-20 opacity-70 hover:opacity-100 transition object-contain">
+                            <img src="./客户logo/客户logo/3.png" alt="Client 3" class="h-20 w-20 opacity-70 hover:opacity-100 transition object-contain">
+                            <img src="./客户logo/客户logo/4.jpg" alt="Client 4" class="h-20 w-20 opacity-70 hover:opacity-100 transition object-contain">
+                        </div>
+                        <!-- Slide 2 (3 logos) -->
+                        <div class="w-1/2 flex justify-around items-center px-4 gap-4 md:gap-8">
+                             <!-- Replace src with actual logos -->
+                             <img src="./客户logo/客户logo/5.png" alt="Client 5" class="h-20 w-20 opacity-70 hover:opacity-100 transition object-contain">
+                             <img src="./客户logo/客户logo/6.png" alt="Client 6" class="h-20 w-20 opacity-70 hover:opacity-100 transition object-contain">
+                             <img src="./客户logo/客户logo/7.png" alt="Client 7" class="h-20 w-20 opacity-70 hover:opacity-100 transition object-contain">
+                             <!-- Empty div to balance spacing -->
+                             <div class="h-16 md:h-20 w-32 md:block hidden"></div> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arrows (Now positioned outside the overflow container but inside the padded wrapper) -->
+                <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white shadow-lg rounded-full p-4 hover:bg-gray-50 text-brand-600 disabled:opacity-30 disabled:cursor-not-allowed z-10 border border-gray-100">
+                    <i class="fas fa-chevron-left text-xl"></i>
+                </button>
+                <button id="nextBtn" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white shadow-lg rounded-full p-4 hover:bg-gray-50 text-brand-600 disabled:opacity-30 disabled:cursor-not-allowed z-10 border border-gray-100">
+                    <i class="fas fa-chevron-right text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Value Proposition -->
+    <section id="pricing" class="py-20 bg-brand-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Maximize Your Marketing ROI</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        In today's highly competitive market, businesses need to maximize marketing value on a limited budget. We specialize in providing cost-effective, professionally executed social media operations tailored for startups, SMEs, and any organization looking to optimize marketing spend.
+                    </p>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-brand-100">
+                        <p class="text-xl font-semibold text-brand-800 mb-2">
+                            <i class="fas fa-tag mr-2 text-brand-500"></i>The 1/5th Cost Advantage
+                        </p>
+                        <p class="text-gray-600">
+                            For less than one-fifth of the cost of hiring a full-time marketing manager, you can now access a full-service, professional Chinese social media team enabling you to scale your brand.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 w-full">
+                    <div class="bg-white rounded-2xl shadow-xl p-8 border-t-4 border-brand-500">
+                        <h3 class="text-xl font-bold mb-6 text-gray-900">What You Get:</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3 text-lg"></i>
+                                <span class="text-gray-700"><strong>Professional Team:</strong> Graphic design, video editing, and high-quality visual content.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3 text-lg"></i>
+                                <span class="text-gray-700"><strong>Strategic Lead:</strong> 8+ years exp, growing accounts from zero to success with data-driven strategies.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3 text-lg"></i>
+                                <span class="text-gray-700"><strong>Platform Access:</strong> Direct access to WeChat & RED managers. Policy updates & risk support without high ad spend thresholds.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3 text-lg"></i>
+                                <span class="text-gray-700"><strong>Ad Specialists:</strong> Dedicated experts to maximize your advertising ROI across key channels.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-50 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Our Clients Love the Services</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative">
+                    <div class="absolute top-8 right-4 text-brand-200">
+                        <i class="fas fa-quote-right text-4xl opacity-50"></i>
+                    </div>
+
+                    <p class="text-gray-600 mb-6 relative z-10 italic leading-relaxed" style="margin-top: 10px;">"Working with Katherine was an absolute joy. Clear strategies, engaging and excellent fluent English to make the process immensely smooth. I would recommend her and her Team for any projects."</p>
+                    <div class="flex items-center gap-4 mt-auto">
+                        <div class="w-12 h-12 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold text-xl">MR</div>
+                        <div class="font-bold text-gray-900 leading-tight">
+                            Mark Roberson <br>
+                            <span class="font-normal text-sm text-gray-500">Founder and CEO, Power Productions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative">
+                     <div class="absolute top-8 right-4 text-brand-200">
+                        <i class="fas fa-quote-right text-4xl opacity-50"></i>
+                    </div>
+                    <!-- <div class="flex text-yellow-400 mb-4 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div> -->
+                    <p class="text-gray-600 mb-6 relative z-10 italic leading-relaxed" style="margin-top: 10px;">"She guided me through the entire process with clear and concise instructions... Her knowledge of the platform was impressive... Katherine assistance was invaluable, and I highly recommend her services."</p>
+                    <div class="flex items-center gap-4 mt-auto">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-xl">YK</div>
+                        <div class="font-bold text-gray-900 leading-tight">
+                            Yulia Khotkovskaya (Kazim)<br>
+                            <span class="font-normal text-sm text-gray-500">Head Of Marketing, International Register of Shipping</span>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Testimonial 3 -->
+                 <div class="testimonial-card bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative">
+                     <div class="absolute top-8 right-4 text-brand-200">
+                        <i class="fas fa-quote-right text-4xl opacity-50"></i>
+                    </div>
+                    <!-- <div class="flex text-yellow-400 mb-4 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div> -->
+                    <p class="text-gray-600 mb-6 relative z-10 italic leading-relaxed" style="margin-top: 10px;">"She produced thoughtful, well-written articles and optimized our account... Her work added real value during a key growth period, and I’d recommend her to any team looking for strong expertise."</p>
+                    <div class="flex items-center gap-4 mt-auto">
+                         <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-bold text-xl">BP</div>
+                        <div class="font-bold text-gray-900 leading-tight">
+                            Bri Policarpio<br>
+                            <span class="font-normal text-sm text-gray-500">Marketing Specialist, Mothership</span>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Testimonial 4 -->
+                 <div class="testimonial-card bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative">
+                     <div class="absolute top-8 right-4 text-brand-200">
+                        <i class="fas fa-quote-right text-4xl opacity-50" ></i>
+                    </div>
+                    <!-- <div class="flex text-yellow-400 mb-4 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div> -->
+                    <p class="text-gray-600 mb-6 relative z-10 italic leading-relaxed" style="margin-top: 10px;">"It was great working with Katherine, she has been very helpful and very professional! She definitely went further than the tasks given to her. I definitely will again call upon her for this kind of work."</p>
+                    <div class="flex items-center gap-4 mt-auto">
+                        <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 font-bold text-xl">CS</div>
+                        <div class="font-bold text-gray-900 leading-tight">
+                            Clement Saulquin<br>
+                            <span class="font-normal text-sm text-gray-500">Founder and CEO, Zhuoyuehuang</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Footer -->
+    <section id="contact" class="bg-gray-900 text-white py-20">
+        
+        <div class="max-w-5xl mx-auto  px-4">
+            <h2 class="text-xl md:text-4xl font-bold mb-6 " style="margin-top: 10px; line-height: 1.2;"><span style="color: rgb(255, 25, 25);">A dynamic consumer force of 1.4 billion</span>, where new demand emerges every second. 
+                Is your brand ready to plug into the world's largest growth engine?<br/>
+                 
+            <h2 class="text-xl md:text-4xl font-bold mb-6 " style="margin-bottom: 50px;margin-top: 10px; line-height: 1.2;">
+                 <span style="color: rgb(255, 25, 25);">Book your free 15-minute consultation on China digital marketing strategy today.</span>
+            </h2>
+            
+
+                
+                <!-- <p class="text-xl text-gray-300 mb-8 text-center" style="margin-bottom: 50px;">
+                Is your brand ready to plug into the world's largest growth engine? <br>
+                Book your free 15-minute consultation on China digital marketing strategy today.
+            </p> -->
+            <!-- <p class="mb-6 text-sm text-gray-300">15-minute consultation on China digital marketing strategy.</p> -->
+            <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/10 max-w-full mx-auto">
+                <h3 class="text-2xl font-bold mb-4 text-center">Book Your Free Consultation</h3>
+                <p class="mb-6 text-sm text-gray-300 text-center">15-minute consultation on China digital marketing strategy.</p>
+                
+
+                <!-- bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb -->
+                 <form id="form" class="space-y-4 text-lg field" onsubmit="event.preventDefault(); alert('In a real website, this would send an email or open a booking calendar!');">
+  <div class="field">
+    <label for="name">Name*<span class="italic text-brand-600">(Required)</span></label>
+    <input type="text" required name="name" id="name" placeholder="What is your name?" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-brand-500">
+  </div>
+  <div class="field">
+    <label for="email">Work Email address*<span class="italic text-brand-600">(Required)</span></label>
+    <input type="email" required name="email" id="email" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-brand-500">
+  </div>
+  <!-- phone  -->
+  <div class="field">
+    <label for="number">Best Phone number*<span class="italic text-brand-600">(Required)</span></label>
+    <input type="text" required name="number" id="subject" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-brand-500">
+  </div>
+  <!-- company -->
+  <div class="field">
+    <label for="subject">Company name*<span class="italic text-brand-600">(Required)</span></label>
+    <input type="text" required name="company" id="company" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-brand-500">
+  </div>
+  <!-- 单选 -->
+  <div class="field">
+    <div class="space-y-2">
+                        <div class="block">How did you find us?* <span class="italic text-brand-600">(Required)</span></div>
+                        <div class="overflow-hidden rounded-lg border border-gray-700 bg-gray-800" style="overflow: auto;height: 300px; scrollbar-width: none;-ms-overflow-style: none; ">
+                        <!-- 选项 1 -->
+                        <label class="flex items-center p-2 cursor-pointer border-b border-gray-700 last:border-b-0 hover:bg-gray-750 transition has-[:checked]:bg-brand-900/20 has-[:checked]:border-l-4 has-[:checked]:border-l-brand-500">
+                            <input type="radio" required name="findSize" value="Google search engine" class="sr-only peer">
+                            <div class="flex-1">
+                            <div class="font-medium text-base text-gray-300 peer-checked:font-bold peer-checked:text-white">Google search engine</div>
+                            </div>
+                        </label>
+
+                        <!-- 选项 2 -->
+                        <label class="flex items-center p-2 cursor-pointer border-b border-gray-700 last:border-b-0 hover:bg-gray-750 transition has-[:checked]:bg-brand-900/20 has-[:checked]:border-l-4 has-[:checked]:border-l-brand-500">
+                            <input type="radio" name="findSize" value="Bing search engine" class="sr-only peer">
+                            <div class="flex-1">
+                            <div class="font-medium text-base text-gray-300 peer-checked:font-bold peer-checked:text-white">Bing search engine</div>
+                            </div>
+                        </label>
+
+                        <!-- 选项 3 -->
+                        <label class="flex items-center p-2 cursor-pointer border-b border-gray-700 last:border-b-0 hover:bg-gray-750 transition has-[:checked]:bg-brand-900/20 has-[:checked]:border-l-4 has-[:checked]:border-l-brand-500">
+                            <input type="radio" name="findSize" value="Yahoo!search engine" class="sr-only peer">
+                            <div class="flex-1">
+                            <div class="font-medium text-base text-gray-300 peer-checked:font-bold peer-checked:text-white">Yahoo!search engine</div>
+                            </div>
+                        </label>
+
+                        <!-- 选项 4 -->
+                        <label class="flex items-center p-2 cursor-pointer border-b border-gray-700 last:border-b-0 hover:bg-gray-750 transition has-[:checked]:bg-brand-900/20 has-[:checked]:border-l-4 has-[:checked]:border-l-brand-500">
+                            <input type="radio" name="findSize" value="AI - ChatGPT" class="sr-only peer">
+                            <div class="flex-1">
+                            <div class="font-medium text-base text-gray-300 peer-checked:font-bold peer-checked:text-white">AI - ChatGPT</div>
+                            </div>
+                        </label>
+
+                        <!-- 选项 5 -->
+                        <label class="flex items-center p-2 cursor-pointer border-b border-gray-700 last:border-b-0 hover:bg-gray-750 transition has-[:checked]:bg-brand-900/20 has-[:checked]:border-l-4 has-[:checked]:border-l-brand-500">
+                            <input type="radio" name="findSize" value="AI - Google Gemini" class="sr-only peer">
+                            <div class="flex-1">
+                            <div class="font-medium text-base text-gray-300 peer-checked:font-bold peer-checked:text-white">AI - Google Gemini</div>
+                            </div>
+                        </label>
+
+                        <!-- 选项 6 -->
+                        <label class="flex items-center p-2 cursor-pointer border-b border-gray-700 last:border-b-0 hover:bg-gray-750 transition has-[:checked]:bg-brand-900/20 has-[:checked]:border-l-4 has-[:checked]:border-l-brand-500">
+                            <input type="radio" name="findSize" value="AI - Google AI Overview" class="sr-only peer">
+                            <div class="flex-1">
+                            <div class="font-medium text-base text-gray-300 peer-checked:font-bold peer-checked:text-white">AI - Google AI Overview</div>
+                            </div>
+                        </label>
+
+                        <!-- 选项 7 -->
+                        <label class="flex items-center p-2 cursor-pointer border-b border-gray-700 last:border-b-0 hover:bg-gray-750 transition has-[:checked]:bg-brand-900/20 has-[:checked]:border-l-4 has-[:checked]:border-l-brand-500">
+                            <input type="radio" name="findSize" value="AI - Other" class="sr-only peer">
+                            <div class="flex-1">
+                            <div class="font-medium text-base text-gray-300 peer-checked:font-bold peer-checked:text-white">AI - Other</div>
+                            </div>
+                        </label>
+
+                        <!-- 选项 8 -->
+                        <label class="flex items-center p-2 cursor-pointer border-b border-gray-700 last:border-b-0 hover:bg-gray-750 transition has-[:checked]:bg-brand-900/20 has-[:checked]:border-l-4 has-[:checked]:border-l-brand-500">
+                            <input type="radio" name="findSize" value="Facebook" class="sr-only peer">
+                            <div class="flex-1">
+                            <div class="font-medium text-base text-gray-300 peer-checked:font-bold peer-checked:text-white">Facebook</div>
+                            </div>
+                        </label>
+
+                        <!-- 选项 9 -->
+                        <label class="flex items-center p-2 cursor-pointer border-b border-gray-700 last:border-b-0 hover:bg-gray-750 transition has-[:checked]:bg-brand-900/20 has-[:checked]:border-l-4 has-[:checked]:border-l-brand-500">
+                            <input type="radio" name="findSize" value="LinkedIn" class="sr-only peer">
+                            <div class="flex-1">
+                            <div class="font-medium text-base text-gray-300 peer-checked:font-bold peer-checked:text-white">LinkedIn</div>
+                            </div>
+                        </label>
+
+                        <!-- 选项 10 -->
+                        <label class="flex items-center p-2 cursor-pointer border-b border-gray-700 last:border-b-0 hover:bg-gray-750 transition has-[:checked]:bg-brand-900/20 has-[:checked]:border-l-4 has-[:checked]:border-l-brand-500">
+                            <input type="radio" name="findSize" value="Instagram" class="sr-only peer">
+                            <div class="flex-1">
+                            <div class="font-medium text-base text-gray-300 peer-checked:font-bold peer-checked:text-white">Instagram</div>
+                            </div>
+                        </label>
+
+                        <!-- 选项 11 -->
+                        <label class="flex items-center p-2 cursor-pointer border-b border-gray-700 last:border-b-0 hover:bg-gray-750 transition has-[:checked]:bg-brand-900/20 has-[:checked]:border-l-4 has-[:checked]:border-l-brand-500">
+                            <input type="radio" name="findSize" value="The Way with Cheech Foo Podcast" class="sr-only peer">
+                            <div class="flex-1">
+                            <div class="font-medium text-base text-gray-300 peer-checked:font-bold peer-checked:text-white">The Way with Cheech Foo Podcast</div>
+                            </div>
+                        </label>
+
+                        <!-- 选项 12 -->
+                        <label class="flex items-center p-2 cursor-pointer border-b border-gray-700 last:border-b-0 hover:bg-gray-750 transition has-[:checked]:bg-brand-900/20 has-[:checked]:border-l-4 has-[:checked]:border-l-brand-500">
+                            <input type="radio" name="findSize" value="Someone else's website" class="sr-only peer">
+                            <div class="flex-1">
+                            <div class="font-medium text-base text-gray-300 peer-checked:font-bold peer-checked:text-white">Someone else's website</div>
+                            </div>
+                        </label>
+
+                        <!-- 选项 13 -->
+                        <label class="flex items-center p-2 cursor-pointer border-b border-gray-700 last:border-b-0 hover:bg-gray-750 transition has-[:checked]:bg-brand-900/20 has-[:checked]:border-l-4 has-[:checked]:border-l-brand-500">
+                            <input type="radio" name="findSize" value="Word of mouth" class="sr-only peer">
+                            <div class="flex-1">
+                            <div class="font-medium text-base text-gray-300 peer-checked:font-bold peer-checked:text-white">Word of mouth</div>
+                            </div>
+                        </label>
+
+                        <!-- 选项 14 -->
+                        <label class="flex items-center p-2 cursor-pointer border-b border-gray-700 last:border-b-0 hover:bg-gray-750 transition has-[:checked]:bg-brand-900/20 has-[:checked]:border-l-4 has-[:checked]:border-l-brand-500">
+                            <input type="radio" name="findSize" value="Radio" class="sr-only peer">
+                            <div class="flex-1">
+                            <div class="font-medium text-base text-gray-300 peer-checked:font-bold peer-checked:text-white">Radio</div>
+                            </div>
+                        </label>
+
+                        <!-- 选项 15 -->
+                        <label class="flex items-center p-2 cursor-pointer border-b border-gray-700 last:border-b-0 hover:bg-gray-750 transition has-[:checked]:bg-brand-900/20 has-[:checked]:border-l-4 has-[:checked]:border-l-brand-500">
+                            <input type="radio" name="findSize" value="TV" class="sr-only peer">
+                            <div class="flex-1">
+                            <div class="font-medium text-base text-gray-300 peer-checked:font-bold peer-checked:text-white">TV</div>
+                            </div>
+                        </label>
+
+                        <!-- 选项 16 -->
+                        <label class="flex items-center p-2 cursor-pointer border-b border-gray-700 last:border-b-0 hover:bg-gray-750 transition has-[:checked]:bg-brand-900/20 has-[:checked]:border-l-4 has-[:checked]:border-l-brand-500">
+                            <input type="radio" name="findSize" value="Print" class="sr-only peer">
+                            <div class="flex-1">
+                            <div class="font-medium text-base text-gray-300 peer-checked:font-bold peer-checked:text-white">Print</div>
+                            </div>
+                        </label>
+
+                        <!-- 选项 17 -->
+                        <label class="flex items-center p-2 cursor-pointer border-b border-gray-700 last:border-b-0 hover:bg-gray-750 transition has-[:checked]:bg-brand-900/20 has-[:checked]:border-l-4 has-[:checked]:border-l-brand-500">
+                            <input type="radio" name="findSize" value="Event" class="sr-only peer">
+                            <div class="flex-1">
+                            <div class="font-medium text-base text-gray-300 peer-checked:font-bold peer-checked:text-white">Event</div>
+                            </div>
+                        </label>
+
+                        
+                    </div>
+    </div>
+  </div>
+  <!--  -->
+   <div class="field">
+    <label for="">Whats your ideal start date?*<span class="italic text-brand-600">(Required)</span></label>
+                     <select required name="start_date" id="" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-brand-500">
+                        <option value=""></option>
+                        <option value="As soon as humanly possible">As soon as humanly possible</option>
+                        <option value="Within 1 month">Within 1 month</option>
+                        <option value="Within 3 months">Within 3 months</option>
+                     </select>
+   </div>
+   <!-- what is your budget? -->
+<div class="field">
+<label for="">What is your budget?<span class="italic text-brand-600">(Required)</span></label>
+                      <select required name="budget" id="" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-gray-300 focus:outline-none focus:border-brand-500">
+                        <option value="$5k - 10k">$5k - 10k</option>
+                        <option value="$10k - 20k">$10k - 20k</option>
+                        <option value="$20k - 50k">$20k - 50k</option>
+                        <option value="$50k+">$50k+</option>
+                     </select>
+</div>
+<!-- tell us -->
+<div class="field">
+  <label for="">Anything else you’d like to tell us?(optional)</label>
+                      <textarea name="message" id="" class="w-full  px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-gray-300 focus:outline-none focus:border-brand-500"></textarea>
+
+</div>
+  <input type="submit" id="button" value="Schedule Now" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">
+</form>
+<!-- zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz -->
+               
+<!-- zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz -->
+            </div>
+            
+            <div class="mt-16 pt-8 border-t border-gray-800 text-gray-500 text-sm text-center">
+                &copy; 2024 Kan Social Media Services. All rights reserved.
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+     <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('MU6I4cAm504vu8eAx')
+</script>
+<script type='text/javascript' src="./js/public.js"></script>
+    <script>
+        // Carousel Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const track = document.getElementById('carouselTrack');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            
+            let currentIndex = 0;
+            const totalSlides = 2; // As requested: Page 1 and Page 2
+
+            // Initial state
+            prevBtn.disabled = true;
+
+            const updateCarousel = () => {
+                const percentage = -(currentIndex * 50); // Since width is 200%, each slide is 50% relative to track? No, width is 200%, so translate -50% moves to second half.
+                track.style.transform = `translateX(${percentage}%)`;
+                
+                prevBtn.disabled = currentIndex === 0;
+                nextBtn.disabled = currentIndex === totalSlides - 1;
+            };
+
+            nextBtn.addEventListener('click', () => {
+                if (currentIndex < totalSlides - 1) {
+                    currentIndex++;
+                    updateCarousel();
+                }
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateCarousel();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

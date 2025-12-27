@@ -1,0 +1,53 @@
+.bg{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bg1{
+    background-image: url(../网站图片/网站图片/Strategy\ Development.png);
+    background-position: left;
+}
+.bg2{
+    background-image: url(../网站图片/网站图片/Content\ Production.png);
+}
+.bg3{
+    background-image: url(../网站图片/网站图片/ROI\ Measurement\ &\ Monitoring.png);
+}
+.bg4{
+    background-image: url(../网站图片/网站图片/KOL\ Campaigns.png);
+}
+.bg5{
+    background-image: url(../网站图片/网站图片/Leads\ Generation\ &\ Ad\ Promotion.png);
+}
+.bg6{
+    background-image: url(../网站图片/网站图片/Community\ Management\ &\ Sales\ Consultant.png);
+}
+
+.core-services{
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.core-right-bg{
+    background-image: url(../网站图片/网站图片/cp-bg2.png);
+}
+.core-right-bg2{
+    background-image: url(../网站图片/网站图片/rm_bg2.png);
+}
+.sd-bg{
+    background-image: url(../网站图片/网站图片/sd_bg.png);
+}
+.cp-bg{
+    background-image: url(../网站图片/网站图片/cp_bg.png);
+}
+.rm-bg{
+    background-image: url(../网站图片/网站图片/rm_bg.png);
+}
+.kc-bg{
+    background-image: url(../网站图片/网站图片/kc_bg.png);
+}
+.lap-bg{
+    background-image: url(../网站图片/网站图片/lap_bg.png);
+}
